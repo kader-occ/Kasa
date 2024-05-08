@@ -4,7 +4,7 @@ Projet 11 Open Class Room, annonces de logements avec ReactJS
 
 ## Scripts
 
-In the project directory, you can run:
+Dans le dossier de l'application :
 
 ### `npm start`
 
