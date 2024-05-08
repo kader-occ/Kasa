@@ -13,8 +13,8 @@ Sur [http://localhost:3000](http://localhost:3000)
 
 ### `npm test`
 
-Lancer les test
+Lancer les tests
 
 ### `npm run build`
 
-Compiler l'application
+Compile l'application
