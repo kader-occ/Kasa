@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LogoComponent from "../Logo/LogoComponent";
 import "./NavbarComponent.css";
 
@@ -11,11 +11,10 @@ const NavbarComponent = () => {
         <Link to="/" className="nav-link">
           Accueil
         </Link>
-        <Link to="about" className="nav-link">
+        <Link to="/about" className="nav-link">
           A propos
         </Link>
       </nav>
-      <Outlet />
     </>
   );
 };

@@ -1,9 +1,11 @@
 import React from "react";
-import "./AProposPage.css";
+import "./AboutPage.css";
+import NavbarComponent from "../../components/Navbar/NavbarComponent";
 
 const AboutPage = () => {
   return (
     <>
+      <NavbarComponent />
       <h1>A Propos</h1>
     </>
   );

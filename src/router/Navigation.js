@@ -6,10 +6,10 @@ import AboutPage from "../UI/pages/About/AboutPage";
 
 const Navigation = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
-        <Route exact path="/" element={<AccueilPage />} />
-        <Route path="about" element={<AboutPage />} />
+        <Route index path="/" element={<AccueilPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
