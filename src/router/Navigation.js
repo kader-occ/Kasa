@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index path="/" element={<AccueilPage />} />
+        <Route exact path="/" element={<AccueilPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
