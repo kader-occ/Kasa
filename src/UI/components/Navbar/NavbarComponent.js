@@ -6,15 +6,23 @@ import "./NavbarComponent.css";
 const NavbarComponent = () => {
   return (
     <>
-      <nav>
-        <LogoComponent />
-        <Link to="/" className="nav-link">
-          Accueil
-        </Link>
-        <Link to="/about" className="nav-link">
-          A propos
-        </Link>
-      </nav>
+      <div className="container">
+        <nav>
+          <LogoComponent />
+          <ul>
+            <li>
+              <Link to="/" className="nav-link">
+                Accueil
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="nav-link">
+                A propos
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </>
   );
 };

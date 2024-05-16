@@ -2,6 +2,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 45px;
 }
 
 .nav-link {
@@ -9,4 +10,12 @@ nav {
   color: black;
   font-size: 24px;
   text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  align-items: center;
 }
