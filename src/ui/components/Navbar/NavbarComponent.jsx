@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LogoComponent from "../Logo/LogoComponent";
-import "./NavbarComponent.css";
+import "./NavbarComponent.scss";
 
 const NavbarComponent = () => {
   return (
@@ -11,12 +11,22 @@ const NavbarComponent = () => {
           <LogoComponent />
           <ul>
             <li>
-              <Link to="/" className="nav-link">
+              <Link
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "bg-green-500 font-bold" : "bg-red-500 font-thin"
+                }
+              >
                 Accueil
               </Link>
             </li>
             <li>
-              <Link to="/about" className="nav-link">
+              <Link
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "bg-green-500 font-bold" : "bg-red-500 font-thin"
+                }
+              >
                 A propos
               </Link>
             </li>

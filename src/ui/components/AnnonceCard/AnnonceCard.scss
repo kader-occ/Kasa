@@ -1,0 +1,13 @@
+$primary: #ff6060;
+
+.card {
+  width: 340px;
+  height: 340px;
+  background: $primary;
+
+  p {
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+  }
+}
