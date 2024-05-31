@@ -130,10 +130,12 @@ table {
   margin: 0;
 }
 
-body {
+body,
+html {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
 }
 
 img,

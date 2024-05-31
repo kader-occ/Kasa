@@ -5,20 +5,16 @@ $primary: #ff6060;
   flex-direction: column;
   gap: 140px;
   align-items: center;
+  justify-content: center;
   color: $primary;
   font-weight: 500;
 
   h1 {
-    font-size: 280px;
+    font-size: xx-large;
     font-weight: 700;
-  }
-
-  p {
-    font-size: 36px;
   }
 
   a {
     color: black;
-    font-size: 18px;
   }
 }
