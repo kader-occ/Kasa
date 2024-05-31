@@ -1,12 +1,12 @@
 import React from "react";
-import "./AnnonceCard.scss";
+import "./LogementCard.scss";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const AnnonceCard = (props) => {
+const LogementCard = (props) => {
   return (
     <>
-      <Link to="/fiche-logement" state={{ annonce: props }}>
+      <Link to="/fiche-logement" state={{ ficheLogement: props }}>
         <div className="card">
           <p>{props.title}</p>
         </div>
@@ -15,7 +15,7 @@ const AnnonceCard = (props) => {
   );
 };
 
-AnnonceCard.prototype = {
+LogementCard.prototype = {
   id: PropTypes.string,
   title: PropTypes.string,
   cover: PropTypes.string,
@@ -31,4 +31,4 @@ AnnonceCard.prototype = {
   tags: PropTypes.array,
 };
 
-export default AnnonceCard;
+export default LogementCard;

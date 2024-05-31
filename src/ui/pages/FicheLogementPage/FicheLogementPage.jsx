@@ -7,18 +7,18 @@ import "./FicheLogementPage.scss";
 
 const FicheLogementPage = () => {
   const location = useLocation();
-  const { annonce } = location.state;
+  const { ficheLogement } = location.state;
 
-  console.log(annonce);
+  console.log(ficheLogement);
 
   return (
     <>
       <NavbarComponent />
       <div className="container fiche-logement">
-        <img src={annonce.cover} alt={annonce.title} />
-        <h1 className="title">{annonce.title}</h1>
-        <p className="location">{annonce.location}</p>
-        {annonce.tags.map((tag) => (
+        <img src={ficheLogement.cover} alt={ficheLogement.title} />
+        <h1 className="title">{ficheLogement.title}</h1>
+        <p className="location">{ficheLogement.location}</p>
+        {ficheLogement.tags.map((tag) => (
           <span className="badge">{tag}</span>
         ))}
       </div>

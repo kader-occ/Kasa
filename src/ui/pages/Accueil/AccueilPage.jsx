@@ -4,7 +4,7 @@ import Header from "../../layouts/Header/Header";
 import Footer from "../../layouts/Footer/Footer";
 import dataArr from "../../../data/data.json";
 import { useRef } from "react";
-import AnnonceCard from "../../components/AnnonceCard/AnnonceCard";
+import LogementCard from "../../components/LogementCard/LogementCard";
 import PropTypes from "prop-types";
 
 const AccueilPage = () => {
@@ -16,7 +16,7 @@ const AccueilPage = () => {
       <Header />
       <section className="container">
         {annonceArr.current.map((annonce, i) => {
-          return <AnnonceCard {...annonce} key={i} />;
+          return <LogementCard {...annonce} key={i} />;
         })}
       </section>
       <Footer />
