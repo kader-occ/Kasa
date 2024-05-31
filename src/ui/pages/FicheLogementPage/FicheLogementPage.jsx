@@ -5,7 +5,7 @@ import Footer from "../../layouts/Footer/Footer";
 import { useLocation } from "react-router-dom";
 import "./FicheLogementPage.scss";
 
-const FicheLogementPage = (props) => {
+const FicheLogementPage = () => {
   const location = useLocation();
   const { annonce } = location.state;
 
