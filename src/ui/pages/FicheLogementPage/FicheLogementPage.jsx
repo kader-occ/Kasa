@@ -15,7 +15,12 @@ const FicheLogementPage = () => {
     <>
       <NavbarComponent />
       <div className="container fiche-logement">
-        <h1>{annonce.title}</h1>
+        <img src={annonce.cover} alt={annonce.title} />
+        <h1 className="title">{annonce.title}</h1>
+        <p className="location">{annonce.location}</p>
+        {annonce.tags.map((tag) => (
+          <span className="badge">{tag}</span>
+        ))}
       </div>
       <Footer />
     </>
