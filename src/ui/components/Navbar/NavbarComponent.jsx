@@ -1,38 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LogoComponent from "../Logo/LogoComponent";
 import "./NavbarComponent.scss";
 
 const NavbarComponent = () => {
   return (
     <>
-      <div className="container">
-        <nav>
-          <LogoComponent />
-          <ul>
-            <li>
-              <Link
-                to="/"
-                className={({ isActive }) =>
-                  isActive ? "bg-green-500 font-bold" : "bg-red-500 font-thin"
-                }
-              >
-                Accueil
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/about"
-                className={({ isActive }) =>
-                  isActive ? "bg-green-500 font-bold" : "bg-red-500 font-thin"
-                }
-              >
-                A propos
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav className="container">
+        <LogoComponent />
+        <ul>
+          <li>
+            <NavLink to="/" activeClassName="active">
+              Accueil
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" activeClassName="active">
+              A propos
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
     </>
   );
 };
