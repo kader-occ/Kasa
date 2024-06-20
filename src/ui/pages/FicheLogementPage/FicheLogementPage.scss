@@ -3,62 +3,6 @@ $primary: #ff6060;
 .fiche-logement {
   font-weight: 500;
 
-  .slideshow-container {
-    width: 100%;
-
-    .mySlides {
-      display: none;
-      width: 100%;
-      height: 500px;
-      position: relative;
-    }
-
-    .mySlides img {
-      width: 100%;
-      height: 100%;
-    }
-
-    .prev,
-    .next {
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      font-weight: bold;
-      padding: 10px 20px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-      user-select: none;
-    }
-
-    .prev {
-      left: 0;
-    }
-
-    .next {
-      right: 0;
-    }
-
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .fade {
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-
-    @keyframes fade {
-      from {
-        opacity: 0.4;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-  }
-
   .split-container {
     display: flex;
     width: 100%;

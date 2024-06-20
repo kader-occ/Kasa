@@ -8,6 +8,7 @@
     position: relative;
     display: inline-block;
     font-size: 0;
+    color: #ddd;
   }
 
   .stars-inner {
@@ -18,13 +19,11 @@
     overflow: hidden;
     width: 0;
     transition: width 0.3s ease;
-    color: inherit;
+    color: #ff6060;
   }
 
-  .stars-outer::before {
-    content: "★★★★★";
-    font-size: 24px;
-    color: #ddd;
+  .star {
+    color: inherit;
   }
 
   .number-rating {
