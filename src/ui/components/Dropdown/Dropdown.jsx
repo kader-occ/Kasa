@@ -16,11 +16,15 @@ const Dropdown = ({ label, text }) => {
           &#9660;
         </span>{" "}
       </div>
-      {label === "Description" && isOpen && (
-        <div className="dropdown-content">
-          <p>{text}</p>
-        </div>
-      )}
+      {label === "Description" ||
+        label === "Fiabilité" ||
+        label === "Respect" ||
+        label === "Service" ||
+        (label === "Securité" && isOpen && (
+          <div className="dropdown-content">
+            <p>{text}</p>
+          </div>
+        ))}
       {label === "Equipements" && isOpen && (
         <div className="dropdown-content">
           <ul>

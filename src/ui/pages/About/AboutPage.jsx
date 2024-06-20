@@ -2,13 +2,34 @@ import React from "react";
 import "./AboutPage.scss";
 import NavbarComponent from "../../components/Navbar/NavbarComponent";
 import Footer from "../../layouts/Footer/Footer";
+import image from "../../../assets/images/about_header_bg.png";
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 const AboutPage = () => {
   return (
     <>
       <NavbarComponent />
+      <div className="header container">
+        <img src={image} alt="header background" className="header-image" />
+        <div className="overlay"></div>
+      </div>
       <div className="container">
-        <h1>A Propos</h1>
+        <Dropdown
+          label="Fiabilité"
+          text="Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux logements, et toutes les informations sont régulierement vérifiées par nos équipes"
+        />
+        <Dropdown
+          label="Respect"
+          text="La bienveillance fait partie des valeurs fondatrices de Kasa.tous comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme"
+        />
+        <Dropdown
+          label="Service"
+          text="La bienveillance fait partie des valeurs fondatrices de Kasa.tous comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme"
+        />
+        <Dropdown
+          label="Securité"
+          text="La bienveillance fait partie des valeurs fondatrices de Kasa.tous comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme"
+        />
       </div>
       <Footer />
     </>
