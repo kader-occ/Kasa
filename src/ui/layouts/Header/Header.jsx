@@ -1,13 +1,14 @@
 import React from "react";
-import header from "../../../assets/images/header.png";
 import "./Header.scss";
 
-const Header = () => {
+const Header = ({ image, text }) => {
   return (
     <>
-      <header className="container">
-        <img src={header} alt="Header" className="header" />
-      </header>
+      <div className="header container">
+        <img src={image} alt="header background" className="header-image" />
+        <div className="overlay"></div>
+        <div className="header-text">{text}</div>
+      </div>
     </>
   );
 };
