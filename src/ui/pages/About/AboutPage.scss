@@ -1,4 +1,10 @@
 .dropdown {
-  width: 1023px !important;
+  width: 1024px;
   margin: 30px auto !important;
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    max-width: 100% !important;
+  }
 }

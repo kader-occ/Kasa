@@ -19,9 +19,9 @@ const FicheLogementPage = () => {
       <NavbarComponent />
       <div className="container fiche-logement">
         <ImageSlider images={ficheLogement.pictures} />
-        <h1 className="title">{ficheLogement.title}</h1>
         <div className="split-container">
           <div className="half-section">
+            <h1 className="title">{ficheLogement.title}</h1>
             <p className="location">{ficheLogement.location}</p>
             {ficheLogement.tags.map((tag) => (
               <span className="badge">{tag}</span>
@@ -35,8 +35,10 @@ const FicheLogementPage = () => {
                 className="owner-photo"
               />
               <p>{ficheLogement.host.name}</p>
+              <div>
+                <StarRating rating={ficheLogement.rating} size={36} />
+              </div>
             </div>
-            <StarRating rating={ficheLogement.rating} size={36} />
           </div>
         </div>
         <div className="dropdown-container">
