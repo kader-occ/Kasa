@@ -20,15 +20,15 @@ const AboutPage = () => {
         />
         <Dropdown
           label="Respect"
-          text="La bienveillance fait partie des valeurs fondatrices de Kasa.tous comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme"
+          text="La bienveillance fait partie des valeurs fondatrices de Kasa.Tous comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme"
         />
         <Dropdown
           label="Service"
-          text="La bienveillance fait partie des valeurs fondatrices de Kasa.tous comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme"
+          text="La bienveillance fait partie des valeurs fondatrices de Kasa.Tous comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme"
         />
         <Dropdown
           label="Securité"
-          text="La bienveillance fait partie des valeurs fondatrices de Kasa.tous comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme"
+          text="La sécurité est la priorité de Kasa.Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établie par nos services.En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés.Nous orgnisont également des ateliers sur la securité domestique de nos hôtes."
         />
       </div>
       <Footer />

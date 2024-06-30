@@ -1,33 +1,16 @@
 .star-rating {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+}
 
-  .stars-outer {
-    position: relative;
-    display: inline-block;
-    font-size: 0;
-  }
+.star-filled {
+  color: #ff6060;
+}
 
-  .stars-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    transition: width 0.3s ease;
-    color: inherit;
-  }
+.star-empty {
+  color: #e4e5e9;
+}
 
-  .stars-outer::before {
-    content: "★★★★★";
-    font-size: 24px;
-    color: #ddd;
-  }
-
-  .number-rating {
-    margin-top: 5px;
-  }
+.star {
+  font-size: 36px;
+  margin: 0 4px;
 }

@@ -27,15 +27,16 @@ const FicheLogementPage = () => {
               <span className="badge">{tag}</span>
             ))}
           </div>
-          <div className="half-section">
-            <div className="owner-info">
+          <div className="half-section owner-info">
+            <div className="owner-details">
               <img
                 src={ficheLogement.host.picture}
-                alt={ficheLogement.host.picture}
+                alt={ficheLogement.host.name}
+                className="owner-photo"
               />
               <p>{ficheLogement.host.name}</p>
-              <StarRating rating={ficheLogement.rating} />
             </div>
+            <StarRating rating={ficheLogement.rating} size={36} />
           </div>
         </div>
         <div className="dropdown-container">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Dropdown.scss";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const Dropdown = ({ label, text }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,32 +9,24 @@ const Dropdown = ({ label, text }) => {
     setIsOpen(!isOpen);
   };
 
+  const isEquipement = label === "Equipements";
+  const content = isEquipement ? (
+    <ul>
+      {text.map((line, index) => (
+        <li key={index}>{line}</li>
+      ))}
+    </ul>
+  ) : (
+    <p>{text}</p>
+  );
+
   return (
-    <div className="dropdown-wrapper">
-      <div className="dropdown-header" onClick={toggleDropdown}>
-        <span>{label}</span>
-        <span className={`dropdown-icon ${isOpen ? "rotate" : ""}`}>
-          &#9660;
-        </span>{" "}
-      </div>
-      {label === "Description" ||
-        label === "Fiabilité" ||
-        label === "Respect" ||
-        label === "Service" ||
-        (label === "Securité" && isOpen && (
-          <div className="dropdown-content">
-            <p>{text}</p>
-          </div>
-        ))}
-      {label === "Equipements" && isOpen && (
-        <div className="dropdown-content">
-          <ul>
-            {text.map((equipement) => (
-              <li>{equipement}</li>
-            ))}
-          </ul>
-        </div>
-      )}
+    <div className="dropdown">
+      <button className="dropdown-toggle" onClick={toggleDropdown}>
+        <span className="dropdown-label">{label}</span>
+        {isOpen ? <FaChevronUp /> : <FaChevronDown />}
+      </button>
+      {isOpen && <div className="dropdown-content">{content}</div>}
     </div>
   );
 };
