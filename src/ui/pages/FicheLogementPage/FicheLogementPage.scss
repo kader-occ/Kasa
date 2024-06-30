@@ -50,7 +50,7 @@ $primary: #ff6060;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    text-align: center;
+    column-gap: 10px;
   }
 
   .owner-details p {
@@ -69,7 +69,7 @@ $primary: #ff6060;
 
     .owner-details {
       flex-direction: row-reverse;
-      column-gap: 10px;
+      column-gap: 30px;
     }
 
     .owner-details p {
@@ -83,6 +83,7 @@ $primary: #ff6060;
 
     .badge {
       font-size: 10px !important;
+      margin-right: 2px !important;
     }
 
     .dropdown-container {
