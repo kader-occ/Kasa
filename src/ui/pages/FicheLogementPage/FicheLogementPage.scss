@@ -69,7 +69,7 @@ $primary: #ff6060;
 
     .owner-details {
       flex-direction: row-reverse;
-      text-align: center;
+      column-gap: 10px;
     }
 
     .owner-details p {
