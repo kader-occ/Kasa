@@ -34,6 +34,9 @@ const ImageSlider = ({ images }) => {
           &#10095;
         </button>
       )}
+      <p className="image-counter">
+        {currentIndex + 1} / {images.length}
+      </p>
     </div>
   );
 };
