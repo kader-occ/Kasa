@@ -16,9 +16,11 @@ const ImageSlider = ({ images }) => {
 
   return (
     <div className="slider">
-      <button onClick={prevSlide} className="prev">
-        &#10094;
-      </button>
+      {images.length > 1 && (
+        <button onClick={prevSlide} className="prev">
+          &#10094;
+        </button>
+      )}
       {images.map((image, index) => (
         <img
           key={index}
@@ -27,9 +29,11 @@ const ImageSlider = ({ images }) => {
           className={`image ${index === currentIndex ? "active" : "inactive"}`}
         />
       ))}
-      <button onClick={nextSlide} className="next">
-        &#10095;
-      </button>
+      {images.length > 1 && (
+        <button onClick={nextSlide} className="next">
+          &#10095;
+        </button>
+      )}
     </div>
   );
 };
