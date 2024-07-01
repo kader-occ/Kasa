@@ -5,8 +5,8 @@ import Footer from "../../layouts/Footer/Footer";
 import { useLocation } from "react-router-dom";
 import "./FicheLogementPage.scss";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
-import Dropdown from "../../components/Dropdown/Dropdown";
 import StarRating from "../../components/StarRating/StarRating";
+import Collapse from "../../components/Collapse/Collapse";
 
 const FicheLogementPage = () => {
   const location = useLocation();
@@ -41,9 +41,9 @@ const FicheLogementPage = () => {
             </div>
           </div>
         </div>
-        <div className="dropdown-container">
-          <Dropdown label="Description" text={ficheLogement.description} />
-          <Dropdown label="Equipements" text={ficheLogement.equipments} />
+        <div className="collapse-container">
+          <Collapse label="Description" text={ficheLogement.description} />
+          <Collapse label="Equipements" text={ficheLogement.equipments} />
         </div>
       </div>
       <Footer />

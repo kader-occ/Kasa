@@ -1,10 +1,10 @@
-.dropdown {
+.collapse {
   width: 1024px;
   margin: 30px auto !important;
 }
 
 @media (max-width: 768px) {
-  .dropdown {
+  .collapse {
     max-width: 100% !important;
   }
 }

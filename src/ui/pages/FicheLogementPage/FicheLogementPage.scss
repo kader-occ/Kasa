@@ -1,5 +1,3 @@
-$primary: #ff6060;
-
 .fiche-logement {
   font-weight: 500;
   padding: 20px;
@@ -86,23 +84,23 @@ $primary: #ff6060;
       margin-right: 2px !important;
     }
 
-    .dropdown-container {
+    .collapse-container {
       flex-direction: column;
     }
 
-    .dropdown {
+    .collapse {
       width: 100% !important;
     }
   }
 
-  .dropdown-container {
+  .collapse-container {
     display: flex;
     column-gap: 75px;
   }
 
   .title {
     font-size: 36px;
-    color: $primary;
+    color: #ff6060;
     margin-top: 30px;
   }
 
@@ -111,7 +109,7 @@ $primary: #ff6060;
   }
 
   .badge {
-    background: $primary;
+    background: #ff6060;
     color: white;
     font-size: 14px;
     padding: 3px 20px;

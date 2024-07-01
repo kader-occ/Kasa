@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./Dropdown.scss";
+import "./Collapse.scss";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-const Dropdown = ({ label, text }) => {
+const Collapse = ({ label, text }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
+  const toggleCollapse = () => {
     setIsOpen(!isOpen);
   };
 
@@ -21,14 +21,14 @@ const Dropdown = ({ label, text }) => {
   );
 
   return (
-    <div className="dropdown">
-      <button className="dropdown-toggle" onClick={toggleDropdown}>
-        <span className="dropdown-label">{label}</span>
+    <div className="collapse">
+      <button className="collapse-toggle" onClick={toggleCollapse}>
+        <span className="collapse-label">{label}</span>
         {isOpen ? <FaChevronUp /> : <FaChevronDown />}
       </button>
-      {isOpen && <div className="dropdown-content">{content}</div>}
+      {isOpen && <div className="collapse-content">{content}</div>}
     </div>
   );
 };
 
-export default Dropdown;
+export default Collapse;
