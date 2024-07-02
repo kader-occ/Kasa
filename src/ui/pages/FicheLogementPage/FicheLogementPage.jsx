@@ -12,8 +12,6 @@ const FicheLogementPage = () => {
   const location = useLocation();
   const { ficheLogement } = location.state;
 
-  console.log(ficheLogement);
-
   return (
     <>
       <NavbarComponent />

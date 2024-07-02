@@ -10,18 +10,12 @@ const NavbarComponent = () => {
         <LogoComponent />
         <ul>
           <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? "active" : "none")}
-            >
+            <NavLink to="/" activeclassname="active" className="nav-link">
               Accueil
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) => (isActive ? "active" : "none")}
-            >
+            <NavLink to="/about" activeclassname="active" className="nav-link">
               A propos
             </NavLink>
           </li>
