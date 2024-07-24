@@ -4,10 +4,15 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const LogementCard = (props) => {
+  console.log(props);
+
   return (
     <>
       <Link to="/fiche-logement" state={{ ficheLogement: props }}>
-        <div className="card">
+        <div
+          className="card"
+          style={{ backgroundImage: `url(${props.cover})` }}
+        >
           <p>{props.title}</p>
         </div>
       </Link>

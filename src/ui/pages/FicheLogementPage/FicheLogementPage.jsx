@@ -22,7 +22,9 @@ const FicheLogementPage = () => {
             <h1 className="title">{ficheLogement.title}</h1>
             <p className="location">{ficheLogement.location}</p>
             {ficheLogement.tags.map((tag) => (
-              <span className="badge">{tag}</span>
+              <span className="badge" key={tag}>
+                {tag}
+              </span>
             ))}
           </div>
           <div className="half-section owner-info">
